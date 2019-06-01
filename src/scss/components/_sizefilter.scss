@@ -1,0 +1,51 @@
+.filters {
+	width: 15%;
+	margin-right: 15px;
+	.title {
+		margin-top: 2px;
+		margin-bottom: 20px;
+	}
+}
+
+.size {
+	display: inline-block;
+	margin-bottom: 10px;
+	label {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 35px;
+		height: 35px;
+		font-size: .8em;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		border-radius: 50%;
+		line-height: 35px;
+		text-align: center;
+		input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			&:checked~.sizeMark {
+				background: #1b1a20;
+				color: #ececec;
+			}
+		}
+		.sizeMark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 35px;
+			height: 35px;
+			font-size: .8em;
+			border-radius: 50%;
+			line-height: 35px;
+			text-align: center;
+			background: #ececec;
+			border: 1px solid transparent;
+			&:hover {
+				border: 1px solid #1b1a20;
+			}
+		}
+	}
+}

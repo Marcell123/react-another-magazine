@@ -1,0 +1,37 @@
+.products-wrapper {
+	width: 85%;
+	.products-header {
+		width: 100%;
+		margin-bottom: 10px;
+		font-weight: bold;
+		overflow: hidden;
+		small {
+			float: left;
+			margin: 8px 0 0;
+		}
+		.sort {
+			float: right;
+			select {
+				background: #fff;
+				outline: none;
+				border: 1px solid #ececec;
+				border-radius: 2px;
+				margin-left: 10px;
+				width: auto;
+				cursor: pointer;
+				text-transform: none;
+				height: 35px;
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+				&:hover {
+					border: 1px solid #5b5a5e;
+				}
+			}
+		}
+	}
+}
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 600px;
+}
